@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>Gallery Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+  <nav>
+    <a href="..\home\home.html">Home</a>
+    <a href="..\floor_plan\floor.html">Floor Plan</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="..\concept\concept.html">Concept</a>
+    <a href="..\mortgage_calculator\haha.html">Mortgage Calculator</a>
+  </nav>
+
+  <header>
+    <h1>Gallery Page</h1>
+    <p>View high-resolution images of interiors, exteriors and amenities</p>
+  </header>
+
+  <div class="gallery-nav">
+    <button onclick="showCategory('interior')">Interiors</button>
+    <button onclick="showCategory('exterior')">Exteriors</button>
+    <button onclick="showCategory('amenity')">Amenities</button>
+  </div>
+
+  <!-- Interior -->
+  <div class="gallery-section interior">
+    <a href="Interior/Living Room 1.jpg" data-lightbox="interior" data-title="Living Room"><img src="Interior/Living Room 1.jpg"  alt="Living Room"></a>
+    <a href="Interior/Bedroom 1.jpg" data-lightbox="interior" data-title="Bedroom"><img src="Interior/Bedroom 1.jpg" alt="Bedroom"></a>
+    <a href="Interior/Kitchen 1.jpg"data-lightbox="interior" data-title="Kitchen"><img src="Interior/Kitchen 1.jpg" alt="Kitchen"></a>
+    <a href="Interior/Bathroom 1.jpg" data-lightbox="interior" data-title="Bathroom"><img src="Interior/Bathroom 1.jpg"alt="Bathroom"></a>
+    
+    <a href="Interior/Living Room 2.jpg" data-lightbox="interior" data-title="Living Room"><img src="Interior/Living Room 2.jpg"  alt="Living Room"></a>
+    <a href="Interior/Bedroom 2.jpg" data-lightbox="interior" data-title="Bedroom"><img src="Interior/Bedroom 2.jpg"alt="Bedroom"></a>
+    <a href="Interior/Dining Room 1.jpg" data-lightbox="interior" data-title="Dining Room"><img src="Interior/Dining Room 1.jpg" alt="Dining Room"></a>
+    <a href="Interior/Washroom 1.jpg" data-lightbox="interior" data-title="Washroom"><img src="Interior/Washroom 1.jpg"  alt="Washroom"></a>
+    
+    <a href="Interior/Home Office.jpg" data-lightbox="interior" data-title="Home Office"><img src="Interior/Home Office.jpg" alt="Home Office"></a>
+    <a href="Interior/Entrance.jpg" data-lightbox="interior" data-title="Entrance"><img src="Interior/Entrance.jpg"alt="Entrance"></a>
+    <a href="Interior/kids room.jpg" data-lightbox="interior" data-title="Kids Room"><img src="Interior/kids room.jpg" alt="Kids Room"></a>
+    <a href="Interior/Kitchen 2.jpg" data-lightbox="interior" data-title="Kitchen"><img src="Interior/Kitchen 2.jpg" alt="Kitchen"></a>
+   
+    <a href="Interior/Multipurpose room.jpg"data-lightbox="interior" data-title="Multipurpose Room"><img src="Interior/Multipurpose room.jpg" alt="Multipurpose Room"></a>
+    <a href="Interior/Kitchen & Dining Area.jpg"data-lightbox="interior" data-title="Kitchen & Dining Area"><img src="Interior/Kitchen & Dining Area.jpg"alt="Kitchen & Dining Area"></a>
+    <a href="Interior/Half Bathroom.jpg" data-lightbox="interior" data-title="Half Bathroom"><img src="Interior/Half Bathroom.jpg" alt="Half Bathroom"></a>
+    <a href="Interior/Living Room 3.jpg"data-lightbox="interior" data-title="Living Room"><img src="Interior/Living Room 3.jpg" alt="Modern Living Room"></a>
+  </div>
+
+  <!-- Exterior -->
+  <div class="gallery-section exterior">
+    <a href="Exterior/Home 1.jpg" data-lightbox="exterior" data-title="House 1"><img src="Exterior/Home 1.jpg"alt="House 1"></a>
+    <a href="Exterior/Home 2.jpg"data-lightbox="exterior" data-title="House 2"><img src="Exterior/Home 2.jpg"alt="House 2"></a>
+    <a href="Exterior/Home 3.jpg" data-lightbox="exterior" data-title="House 3"><img src="Exterior/Home 3.jpg"alt="House 3"></a>
+    <a href="Exterior/Home 4.jpg" data-lightbox="exterior" data-title="House 4"><img src="Exterior/Home 4.jpg"alt="House 4"></a>
+   
+    <a href="Exterior/Home 5.jpg" data-lightbox="exterior" data-title="House 5"><img src="Exterior/Home 5.jpg"alt="House 5"></a>
+    <a href="Exterior/Home 6.jpg" data-lightbox="exterior" data-title="House 6"><img src="Exterior/Home 6.jpg" alt="House 6"></a>
+    <a href="Exterior/Home 7.jpg"data-lightbox="exterior" data-title="House 7"><img src="Exterior/Home 7.jpg"alt="House 7"></a>
+    <a href="Exterior/Home 8.jpg"data-lightbox="exterior" data-title="House 8"><img src="Exterior/Home 8.jpg"alt="House 8"></a>
+  </div>
+
+  <!-- Amenity -->
+  <div class="gallery-section amenity">
+    <a href="Amenities/Swimming Pool.jpg" data-lightbox="amenity" data-title="Swimming Pool"><img src="Amenities/Swimming Pool.jpg"   alt="Swimming Pool"></a>
+    <a href="Amenities/Gym.jpg"data-lightbox="amenity" data-title="Gym"><img src="Amenities/Gym.jpg"alt="Gym"></a>
+    <a href="Amenities/Sport Courts.jpg"data-lightbox="amenity" data-title="Sport Courts"><img src="Amenities/Sport Courts.jpg" alt="Sport Courts"></a>
+    <a href="Amenities/Reading Room.jpg" data-lightbox="amenity" data-title="Reading Room"><img src="Amenities/Reading Room.jpg" alt="Reading Room"></a>
+    
+    <a href="Amenities/Billiards Room.jpg"data-lightbox="amenity" data-title="Billiards Room"><img src="Amenities/Billiards Room.jpg" alt="Billiards Room"></a>
+    <a href="Amenities/Gaming Room.jpg" data-lightbox="amenity" data-title="Gaming Room"><img src="Amenities/Gaming Room.jpg" alt="Gaming Room"></a>
+    <a href="Amenities/Kids Entertainment Room.jpg"data-lightbox="amenity" data-title="Kids Entertainment Room"><img src="Amenities/Kids Entertainment Room.jpg"alt="Kids Entertainment Room"></a>
+    <a href="Amenities/Sauna Room.jpg" data-lightbox="amenity" data-title="Sauna Room"><img src="Amenities/Sauna Room.jpg" alt="Sauna Room"></a>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+  <script src="script.js"></script>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61575621076982" target="_blank">
+        <img src="..\social_media\fb.svg" alt="Facebook" class="footer-icon">
+      </a>
+      <a href="https://www.instagram.com/greenviewresidences25/" target="_blank">
+        <img src="..\social_media\ig.svg" alt="Instagram" class="footer-icon">
+      </a>
+      <a href="https://x.com/GreenView2025" target="_blank">
+        <img src="..\social_media\X.svg" alt="X" class="footer-icon">
+      </a>
+    </div>
+    <p>&copy; 2025 GreenView Residences. All rights reserved.</p>
+  </footer>
+</body>
+</html>

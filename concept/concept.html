@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Residential Design Poster</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="..\home\home.html">Home</a>
+    <a href="..\floor_plan\floor.html">Floor Plan</a>
+    <a href="..\gallery\gallery.html">Gallery</a>
+    <a href="concept.html" class="active">Concept</a>
+    <a href="..\mortgage_calculator\haha.html">Mortgage Calculator</a>
+  </nav>
+
+  <div class="title-container">
+    <div class="page-title">Concept Page</div>
+  </div>
+
+  <div class="container">
+    <div class="left-column">
+      <div class="circle-block" onclick="openModal('01.png')">
+        <img src="01.png" alt="Living Room">
+        <div class="hover-text">Living Room</div>
+        <p>Modern comfort with natural materials</p>
+      </div>
+      <div class="circle-block" onclick="openModal('02.png')">
+        <img src="02.png" alt="Bedroom">
+        <div class="hover-text">Bedroom</div>
+        <p>Sustainable lighting with natural ambience</p> 
+      </div>
+      <div class="circle-block" onclick="openModal('03.png')">
+        <img src="03.png" alt="Kitchen">
+        <div class="hover-text">Kitchen</div>
+        <p>Openness and functional space planning</p>
+      </div>
+      <div class="circle-block" onclick="openModal('04.png')">
+        <img src="04.png" alt="Bathroom">
+        <div class="hover-text">Bathroom</div>
+        <p>Soft neutral tones for peaceful atmosphere</p>
+      </div>
+    </div>
+
+    <div class="right-column">
+      <div class="carousel">
+        <img id="carouselImage" src="001.jpeg" alt="Main Visual">
+        <button class="nav-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="nav-btn next" onclick="changeSlide(1)">❯</button>
+      </div>
+      <div class="dots">
+        <span class="dot active" onclick="setSlide(0)"></span>
+        <span class="dot" onclick="setSlide(1)"></span>
+        <span class="dot" onclick="setSlide(2)"></span>
+        <span class="dot" onclick="setSlide(3)"></span>
+      </div>
+
+      <div class="title-block">
+        <h1>Vision</h1>
+        <p>This project aims to create a residential space that blends modern comfort with artistic flair, meeting the urban population's pursuit of quality living. The design is inspired by natural light and spatial balance, emphasizing interaction between people and the environment.</p>
+      </div>
+
+      <div class="summary-box">
+        <h2>Interior Design Concepts & Features</h2>
+        <ul>
+          <li>Minimalist yet warm, using modern styles combined with natural materials.</li>
+          <li>Spatial planning emphasizes openness and functionality.</li>
+          <li>Extensive use of natural light and low-energy lighting enhances sustainability.</li>
+          <li>Color scheme focuses on soft neutral tones to create a peaceful atmosphere.</li>
+        </ul>
+        <p><strong>Designer:</strong> Jia Wang — Award-winning designer focused on sustainability and aesthetics.</p>
+      </div>
+
+      <div class="summary-box">
+        <h2>Exterior Design Concepts & Features</h2>
+        <ul>
+          <li>Modern residential design values focused on aesthetics, comfort, privacy, and functionality.</li>
+          <li>Detached, family-oriented homes with private yards, large windows for natural light, and high-quality materials.</li>
+          <li>Despite stylistic differences, each house emphasizes a balance between visual appeal and practical living, aligning with contemporary trends in home design.</li>
+        </ul>
+        <p><strong>Note:</strong> Exterior views are designed to complement the interior harmony and sustainability goals.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for full-size image -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <img id="modalImage" src="" alt="Full View">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/profile.php?id=61575621076982" target="_blank">
+        <img src="..\social_media\fb.svg" alt="Facebook" class="footer-icon">
+      </a>
+      <a href="https://www.instagram.com/greenviewresidences25/" target="_blank">
+        <img src="..\social_media\ig.svg" alt="Instagram" class="footer-icon">
+      </a>
+      <a href="https://x.com/GreenView2025" target="_blank">
+        <img src="..\social_media\X.svg" alt="X" class="footer-icon">
+      </a>
+    </div>
+    <p>&copy; 2025 GreenView Residences. All rights reserved.</p>
+  </footer>
+</body>
+</html>
