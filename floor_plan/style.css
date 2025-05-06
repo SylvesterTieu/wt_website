@@ -383,7 +383,8 @@
       font-size: 0.95rem;
     }
   
-    footer {
-      font-size: 0.8rem;
-    }
+    .footer-icon {
+      width: 30px;
+      height: 30px;
+    } 
 }
